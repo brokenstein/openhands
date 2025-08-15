@@ -1,5 +1,39 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+
+
+## Deployment & Usage Instructions
+
+### 1. Install dependencies
+
+```
+npm install
+```
+
+### 2. Start the development server
+
+```
+npm run dev-custom
+```
+
+- The app will be available at http://localhost:53350
+- To change the port, edit the `dev-custom` script in `package.json`.
+
+### 3. Default Login
+- Username: `admin`
+- Password: `password`
+
+### 4. Features
+- Modular dashboard with sidebar navigation
+- Login/logout (credentials-based, can be expanded)
+- Save links and documents (localStorage)
+- Tools module (placeholder for quick access tools)
+
+### 5. Expanding the Dashboard
+- Add new modules/pages in the `app/` directory (e.g., `app/newmodule/page.tsx`)
+- Update the sidebar in `app/layout.tsx` to link to new modules
+- For persistent storage, connect to a backend/database and update the relevant modules
+
 ## Getting Started
 
 First, run the development server:
